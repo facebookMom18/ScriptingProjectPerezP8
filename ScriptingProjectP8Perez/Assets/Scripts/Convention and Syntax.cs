@@ -17,7 +17,7 @@ public class ConventionandSyntax : MonoBehaviour
         //I want to know when a game objects y position is lower than 5
         if (transform.position.y <= 5f)
         {
-
+            Debug.Log("Im about to hit the ground and hi Mr Quintero");
         }
     }
 }
