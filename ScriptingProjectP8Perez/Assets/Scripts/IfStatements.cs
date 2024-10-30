@@ -1,19 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 public class IfStatements : MonoBehaviour
 {
     float coffeeTemperature = 85.0f;
     float hotLimitTemperature = 70.0f;
     float coldLimitTemperature = 40.0f;
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -21,25 +15,27 @@ public class IfStatements : MonoBehaviour
 
         coffeeTemperature -= Time.deltaTime * 5f;
     }
+
+
     void TemperatureTest()
     {
-        //if the coffees temperature is greater that the hottest drinking temperature
+        // If the coffee's temperature is greater than the hottest drinking temperature...
         if (coffeeTemperature > hotLimitTemperature)
         {
-            // do this\
-            print("coffee is too hot");
+            // ... do this.
+            print("Coffee is too hot.");
         }
-        //If it isnt, but the coffee temperature is less than the coldest drinking temperature
+        // If it isn't, but the coffee temperature is less than the coldest drinking temperature...
         else if (coffeeTemperature < coldLimitTemperature)
         {
-            // do this
-            print("coffee is too cold");
+            // ... do this.
+            print("Coffee is too cold.");
         }
-        // If it is neither of those then
+        // If it is neither of thos e then...
         else
         {
-            // do this.
-            print("coffee is just right.");
+            // ... do this.
+            print("Coffee is just right.");
         }
     }
 }
