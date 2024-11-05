@@ -12,7 +12,7 @@ public class WhileLoops : MonoBehaviour
         {
 
             Debug.Log("Ive washed a cup!");
-            cupsInTheSink--
+            cupsInTheSink--;
         }
     }
 
