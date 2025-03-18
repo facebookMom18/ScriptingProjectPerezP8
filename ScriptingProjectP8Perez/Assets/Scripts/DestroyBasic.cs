@@ -8,7 +8,7 @@ public class DestroyBasic : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            Destroy(gameObject);
+            Destroy(gameObject, 3f);
         }
     }
 }
